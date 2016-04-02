@@ -23,7 +23,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.menus=[NSMutableArray array];
-    NSString* path=[NSString stringWithFormat:@"http://apis.juhe.cn/cook/query?key=cae1e0967d353679792c1e12e7cd1845&menu=%@",self.menu];
+    NSString* path=[NSString stringWithFormat:@"http://apis.juhe.cn/cook/query?key=cae1e0967d353679792c1e12e7cd&menu=%@",self.menu];
     //URL包含中文时，必须转码
     path=[path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     //创建url
